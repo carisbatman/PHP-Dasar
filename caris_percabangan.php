@@ -1,18 +1,15 @@
 <?php
-    $nilai = 120;
-    
-    if ($nilai > 100) {
-        echo "$nilai = Yah! Nilainya gak valid nih:(";
-    }   else if ($nilai >= 90) {
-        echo "$nilai = A";
-    }   else if ($nilai >= 80) {
-        echo "$nilai = B";
-    }   else if ($nilai >= 70) {
-        echo "$nilai = C";
-    }   else if ($nilai >= 0) {
-        echo "$nilai = D";
-    }
+$nilai = -8;
 
-    
+if ($nilai >= 90) {
+    echo "Nilai $nilai = A";
+} else if ($nilai >= 80) {
+    echo "Nilai $nilai = B";
+} else if ($nilai >= 70) {
+    echo "Nilai $nilai = C";
+} else if ($nilai >= 0) {
+    echo "Nilai $nilai = D";
+} else {
+    echo "Nilai $nilai = Yah! Nilainya gak valid nih:(";
+}
 ?>
-
