@@ -65,7 +65,7 @@
     } else {
         echo ("$jam = Apa ini? Andi hidup 24 jam aja");
     }
-    //Andi jadwal harian fullnya yages
+    //Jadwal harian fullnya Andi yages
     echo "<h2>Jadwal Harian Andi</h2>";
     $jadwal = [
         ["15:30 - 15:45", "Andi perjalanan pulang ke rumah dari sekolah"],
@@ -86,7 +86,7 @@
         ["05:00 - 07:00", "Andi persiapan dan berangkat ke sekolah"],
         ["07:30 - 15:30", "Andi masih di sekolah"]
     ];
-    //Andi minta dibuatin jadwal sama caris
+    
     foreach ($jadwal as $item) {
         echo $item[0] . " = " . $item[1] . "<br>";
     }
