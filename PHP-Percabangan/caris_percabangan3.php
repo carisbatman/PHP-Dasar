@@ -1,7 +1,7 @@
 <body>
     <?php
-    $jam = date("28:00");
-    $ada_tugas = "gak maju";
+    $jam = date("21:30");
+    $ada_tugas = "ada";
     $waktu_ngobrol = "maju";
 
     if ($jam > date("15:30") && $jam <= date("15:45")) {
@@ -65,6 +65,31 @@
     } else {
         echo ("$jam = Apa ini? Andi hidup 24 jam aja");
     }
+    //Andi jadwal harian fullnya yages
+    echo "<h2>Jadwal Harian Andi</h2>";
+    $jadwal = [
+        ["15:30 - 15:45", "Andi perjalanan pulang ke rumah dari sekolah"],
+        ["15:45 - 16:15", "Andi membeli bumbu"],
+        ["16:15 - 16:30", "Andi sedang mandi"],
+        ["16:30 - 17:00", "Andi sedang mengaji"],
+        ["17:00 - 17:30", "Andi chatting dengan Raya"],
+        ["17:30 - 18:00", "Andi sedang menghafalkan dialog"],
+        ["18:00 - 18:10", "Andi sholat Maghrib"],
+        ["18:10 - 18:30", "Andi makan malam bersama keluarga"],
+        ["18:30 - 19:00", "Waktu luang"],
+        ["19:00 - 19:10", "Andi sholat Isya"],
+        ["19:10 - 21:10", "Andi mengerjakan tugas sekolah"],
+        ["21:10 - 21:40", "Andi mengobrol dengan keluarga"],
+        ["21:40 - 22:00", "Waktu luang hingga sebelum tidur"],
+        ["22:00 - 04:00", "Andi tidur"],
+        ["04:00 - 05:00", "Andi sedang sholat Subuh dan mengaji"],
+        ["05:00 - 07:00", "Andi persiapan dan berangkat ke sekolah"],
+        ["07:30 - 15:30", "Andi masih di sekolah"]
+    ];
+    //Andi minta dibuatin jadwal sama caris
+    foreach ($jadwal as $item) {
+        echo $item[0] . " = " . $item[1] . "<br>";
+    }
     ?>
     
-    <h2> Jadwal Andi <h2>
+    
